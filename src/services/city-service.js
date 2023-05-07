@@ -13,7 +13,7 @@ class CityService {
             return createdCity;
         }
         catch(error){
-            return {error}
+            throw {error}
         }
 
     }
@@ -25,7 +25,7 @@ class CityService {
              return true;
         }
         catch(error){
-            return {error};
+            throw {error};
         }
 
     }
@@ -36,7 +36,7 @@ class CityService {
             return city
         }
         catch(error){
-            return {error};
+            throw {error};
         }
     }
 }
